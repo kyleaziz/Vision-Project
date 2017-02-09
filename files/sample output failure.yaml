@@ -1,0 +1,5 @@
+scanners:
+  - name: Barcode
+    pass: false
+  - name: PLU
+    pass: false

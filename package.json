@@ -1,0 +1,19 @@
+{
+  "name": "visionapp",
+  "version": "1.0.0",
+  "description": "Vision App for Ag-tronic Control Systems",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kyleaziz/visionapp.git"
+  },
+  "dependencies": {
+    "chokidar": "^1.6.1",
+    "jsonfile": "^2.4.0"
+  }
+}

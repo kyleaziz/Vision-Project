@@ -1,0 +1,10 @@
+------
+user
+resources
+versions
+comments and activity feed messages
+------
+drafts will hit code that skip wrapping in transaction
+
+interaction with other units of work - creating with unit of work - metadata (wouldn't go through this and shares for multi-sharing)
+
