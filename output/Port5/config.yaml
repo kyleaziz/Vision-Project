@@ -1,0 +1,39 @@
+log‐level: info
+threads: 3
+queue‐depth: 4
+fail‐threshold: 5
+signal‐on‐fail: false
+image‐buffer‐size: 100
+output‐path: /home/user/agvision
+camera:
+  type: icube
+  exposure: 1
+  gain: 64
+  trigger‐delay: 0.07
+  strobe‐length: 1
+  strobe‐delay: 0.07
+  flip: true
+scanners:
+  - name: Barcode
+    type: barcode
+    enabled: true
+    roi:
+      - 0
+      - 0
+      - 640
+      - 40
+    vertical: false
+    scan‐density: 2
+    symbology: databar
+    content: 0088577300011
+  - name: PLU
+    type: ocr
+    enabled: true
+    roi:
+      - 0
+      - 21
+      - 640
+      - 78
+    vertical: false
+    numeric: true
+    content: '3107'

@@ -1,13 +1,65 @@
 {
   "username": "Kyle",
   "password": "KylesPass",
+  "globalYaml": true,
   "iniFolder": "./files/inis",
   "numPorts": 6,
-  "port1": "./Port1/config.yaml",
-  "port2": "./Port2/config.yaml",
-  "port3": "./Port3/config.yaml",
-  "port4": "./Port4/config.yaml",
-  "port5": "./Port5/config.yaml",
-  "port6": "./Port6/config.yaml",
-  "iniList" : []
+  "Port1": {
+    "config": "./Port1/config.yaml",
+    "target": "./output/Port1/config.yaml"
+  },
+  "Port2": {
+    "config": "./Port2/config.yaml",
+    "target": "./output/Port2/config.yaml"
+  },
+  "Port3": {
+    "config": "./Port3/config.yaml",
+    "target": "./output/Port3/config.yaml"
+  },
+  "Port4": {
+    "config": "./Port4/config.yaml",
+    "target": "./output/Port4/config.yaml"
+  },
+  "Port5": {
+    "config": "./Port5/config.yaml",
+    "target": "./output/Port5/config.yaml"
+  },
+  "Port6": {
+    "config": "./Port6/config.yaml",
+    "target": "./output/Port6/config.yaml"
+  },
+  "iniList" : [],
+  "yamlConfig" : { "log‐level": "info",
+    "threads": 3,
+    "queue‐depth": 4,
+    "fail‐threshold": 5,
+    "signal‐on‐fail": false,
+    "image‐buffer‐size": 100,
+    "output‐path": "/home/user/agvision",
+    "camera": 
+     { "type": "icube",
+       "exposure": 1,
+       "gain": 64,
+       "trigger‐delay": 0.07,
+       "strobe‐length": 1,
+       "strobe‐delay": 0.07,
+       "flip": true },
+    "scanners": 
+     [ { "name": "Barcode",
+         "type": "barcode",
+         "enabled": true,
+         "roi": [],
+         "vertical": false,
+         "scan‐density": 2,
+         "symbology": "databar",
+         "content": "0100151972708880" },
+       { "name": "PLU",
+         "type": "ocr",
+         "enabled": true,
+         "roi": [],
+         "vertical": false,
+         "numeric": true,
+         "content": "2015" } 
+    ] 
+  }
 }

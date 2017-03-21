@@ -66,7 +66,7 @@ exports.getInis = function(dir) {
       iniList.push(files[file]);
     }
   }
-  console.log("The list of .ini files returned is: " + iniList);
+  //console.log("The list of .ini files returned is: " + iniList);
   return iniList;
 }
 

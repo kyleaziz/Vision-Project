@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "author": "",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "socket.io": "1.x.x"
+  },
+  "publishConfig": {
+    "registry": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+  }
+}

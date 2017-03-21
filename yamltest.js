@@ -1,7 +1,7 @@
 var yaml = require('js-yaml');
 var fs   = require('fs');
 
-exports.read = function(path) {
+var readYaml = function(path) {
 try {
     var doc = yaml.safeLoad(fs.readFileSync(path, 'utf8'));
     console.log(doc);
@@ -10,7 +10,7 @@ try {
   }
 }
 
-exports.writeYaml = function(object, path) {
+var writeYaml = function(object, path) {
 try {
     var doc = yaml.safeDump(object);
     console.log(doc);
@@ -38,6 +38,6 @@ var readWriteYaml = function(readPath, writePath) {
   }
 }
 
-readWriteYaml('./files/config.yaml','./files/testOutput.yaml');
+readYaml('./files/config.yaml','./files/testOutput.yaml');
 // var file = read('./files/config.yaml')
 // console.log(yaml.safeDump);

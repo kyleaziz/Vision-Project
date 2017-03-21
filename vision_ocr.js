@@ -92,7 +92,6 @@ var printSetter = function(yamlObject, iniObject, outputYamlFile) {
 
 var getLatestList = function(fullIniList){
   var sortedList = new Object;
-
   fullIniList.forEach(function (file) {
     var port = file.slice(file.indexOf("_") + 1, file.lastIndexOf("_"));
     var fileDate = parseInt(file.slice(file.lastIndexOf("_") + 1, file.indexOf(".")));
